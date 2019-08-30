@@ -2,3 +2,4 @@
 Pods/
 GeoStream.xcworkspace
 GeoStreamTests/
+.DS_Store
