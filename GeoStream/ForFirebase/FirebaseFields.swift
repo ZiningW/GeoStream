@@ -21,7 +21,6 @@ struct FirebaseFields{
     static let broadcasting: String = "Broadcasting"
     static let broadCastChannel: String = "BroadcastChannel"
     static let broadCastRole: String = "BroadcastRole"
-    static let broadCastAPI: String = "API"
     static let broadCastToken: String = "Token"
 }
 

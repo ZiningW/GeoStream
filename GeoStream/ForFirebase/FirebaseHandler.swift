@@ -58,7 +58,6 @@ class FirebaseHandler: NSObject {
                         FirebaseFields.broadcasting: broadcastContants.notBroadcasting,
                         FirebaseFields.broadCastChannel: constants.notConnected,
                         FirebaseFields.broadCastRole: constants.notConnected,
-                        FirebaseFields.broadCastAPI: constants.notConnected,
                         FirebaseFields.broadCastToken: constants.notConnected] as [String : Any]
         
         selfFirebaseTracker = initData
@@ -77,13 +76,12 @@ class FirebaseHandler: NSObject {
 
 // For managing video broadcasting
 extension FirebaseHandler{
-    func hostBroadcast(streamID: String, api: String, token: String){
+    func hostBroadcast(streamID: String, token: String){
         // If we're hosting, send our session information created in VideoViewController to Firebase so viewers can join our stream
         broadcastID = streamID
         let broadCastData = ["\(myId)/\(FirebaseFields.broadCastRole)": broadcastContants.hostBroadcast,
                              "\(myId)/\(FirebaseFields.broadCastChannel)": streamID,
                              "\(myId)/\(FirebaseFields.broadcasting)": broadcastContants.isBroadcasting,
-                             "\(myId)/\(FirebaseFields.broadCastAPI)": api,
                              "\(myId)/\(FirebaseFields.broadCastToken)": token]
         
         self.base.updateChildValues(broadCastData)
@@ -94,18 +92,16 @@ extension FirebaseHandler{
         let broadCastData = ["\(myId)/\(FirebaseFields.broadCastRole)": constants.notConnected,
                              "\(myId)/\(FirebaseFields.broadCastChannel)": constants.notConnected,
                              "\(myId)/\(FirebaseFields.broadcasting)": broadcastContants.notBroadcasting,
-                             "\(myId)/\(FirebaseFields.broadCastAPI)": constants.notConnected,
                              "\(myId)/\(FirebaseFields.broadCastToken)": constants.notConnected]
         
         self.base.updateChildValues(broadCastData)
     }
     
-    func watchBroadcast(streamID: String, api: String, token: String){
+    func watchBroadcast(streamID: String, token: String){
         // Update our firebase values based on which stream we joined
         let broadCastData = ["\(myId)/\(FirebaseFields.broadCastRole)": broadcastContants.audBroadcast,
                              "\(myId)/\(FirebaseFields.broadCastChannel)": streamID,
                              "\(myId)/\(FirebaseFields.broadcasting)": broadcastContants.notBroadcasting,
-                             "\(myId)/\(FirebaseFields.broadCastAPI)": api,
                              "\(myId)/\(FirebaseFields.broadCastToken)": token]
         
         self.base.updateChildValues(broadCastData)

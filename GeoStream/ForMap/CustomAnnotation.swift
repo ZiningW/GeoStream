@@ -17,7 +17,6 @@ class CustomAnnotation: MKPointAnnotation {
     var streaming: String?
     var streamChannelID: String?
     var streamToken: String?
-    var streamAPI: String?
     
     override init() {
         super.init()

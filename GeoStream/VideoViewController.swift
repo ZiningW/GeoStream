@@ -15,7 +15,7 @@ class VideoChatViewController: UIViewController {
     var subscriber: OTSubscriber?
     
     // Replace with your OpenTok API key
-    var kApiKey = ""
+    var kApiKey = "46412142"
     // Replace with your generated session ID
     var kSessionId = ""
     // Replace with your generated token
@@ -53,14 +53,14 @@ class VideoChatViewController: UIViewController {
                 self.kToken = dict?["token"] as? String ?? ""
                 self.connectToAnOpenTokSession()
                 
-                self.fHandler.hostBroadcast(streamID: self.kSessionId, api: self.kApiKey, token: self.kToken)
+                self.fHandler.hostBroadcast(streamID: self.kSessionId, token: self.kToken)
             }
             
             dataTask.resume()
             session.finishTasksAndInvalidate()
         } else {
             // if we're watching a stream, join using session id and other information received from FireBase
-            self.fHandler.watchBroadcast(streamID: self.kSessionId, api: self.kApiKey, token: self.kToken)
+            self.fHandler.watchBroadcast(streamID: self.kSessionId, token: self.kToken)
             self.connectToAnOpenTokSession()
         }
         

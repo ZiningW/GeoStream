@@ -184,11 +184,10 @@ extension MainViewController{
         videoVC.didMove(toParent: self)
     }
     
-    func viewStream(streamID: String, api: String, token: String){
+    func viewStream(streamID: String, token: String){
         let videoVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "videoView") as! VideoChatViewController
         videoVC.isPublisher = false
         videoVC.kSessionId = streamID
-        videoVC.kApiKey = api
         videoVC.kToken = token
         self.view.addSubview(videoVC.view)
         addChild(videoVC)
@@ -258,9 +257,8 @@ extension MainViewController: MKMapViewDelegate {
         let userAnno = view.annotation as! CustomAnnotation
         
         guard let channelStreamID = userAnno.streamChannelID else {return}
-        guard let api = userAnno.streamAPI else {return}
         guard let token = userAnno.streamToken else {return}
-        viewStream(streamID: channelStreamID, api: api, token: token)
+        viewStream(streamID: channelStreamID, token: token)
 
     }
     
@@ -312,7 +310,6 @@ extension MainViewController{
                 let broadcastChannel = values["BroadcastChannel"] as! String
                 
                 let broadcasting = values["Broadcasting"] as! String
-                let broadcastAPI = values["API"] as! String
                 let broadcastToken = values["Token"] as! String
                 
 
@@ -324,7 +321,6 @@ extension MainViewController{
                     if self.annoObjectDict[uid]?.annotationView != nil {
                         self.annoObjectDict[uid]?.streaming = "true"
                         self.annoObjectDict[uid]?.streamChannelID = broadcastChannel
-                        self.annoObjectDict[uid]?.streamAPI = broadcastAPI
                         self.annoObjectDict[uid]?.streamToken = broadcastToken
                     }
                 }
