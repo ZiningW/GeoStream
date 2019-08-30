@@ -1,0 +1,4 @@
+# Do not commit Pods Folder to git
+Pods/
+GeoStream.xcworkspace
+GeoStreamTests/

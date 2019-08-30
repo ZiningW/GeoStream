@@ -1,0 +1,700 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71269D0423176066006C7DEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D0323176066006C7DEC /* AppDelegate.swift */; };
+		71269D0B23176067006C7DEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71269D0A23176067006C7DEC /* Assets.xcassets */; };
+		71269D0E23176067006C7DEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71269D0C23176067006C7DEC /* LaunchScreen.storyboard */; };
+		71269D1923176067006C7DEC /* GeoStreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D1823176067006C7DEC /* GeoStreamTests.swift */; };
+		71269D362317A25A006C7DEC /* MapAnnotationStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D242317A259006C7DEC /* MapAnnotationStruct.swift */; };
+		71269D382317A25A006C7DEC /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D262317A259006C7DEC /* CustomAnnotation.swift */; };
+		71269D432317A25A006C7DEC /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D332317A25A006C7DEC /* ContainerViewController.swift */; };
+		71269D452317A25A006C7DEC /* LeftPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D352317A25A006C7DEC /* LeftPanelViewController.swift */; };
+		71269D4A2317A267006C7DEC /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D462317A266006C7DEC /* VideoViewController.swift */; };
+		71269D4B2317A267006C7DEC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D472317A267006C7DEC /* LoginViewController.swift */; };
+		71269D4C2317A267006C7DEC /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D482317A267006C7DEC /* LaunchScreenViewController.swift */; };
+		71269D4D2317A267006C7DEC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D492317A267006C7DEC /* MainViewController.swift */; };
+		71269D6C2317A27E006C7DEC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D542317A27E006C7DEC /* Constants.swift */; };
+		71269D6D2317A27E006C7DEC /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D552317A27E006C7DEC /* LogInView.swift */; };
+		71269D6F2317A27E006C7DEC /* ImageFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D572317A27E006C7DEC /* ImageFormat.swift */; };
+		71269D702317A27E006C7DEC /* ImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D582317A27E006C7DEC /* ImageButton.swift */; };
+		71269D722317A27E006C7DEC /* LeftPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D5A2317A27E006C7DEC /* LeftPanelView.swift */; };
+		71269D732317A27E006C7DEC /* MapAnnotationFormating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D5B2317A27E006C7DEC /* MapAnnotationFormating.swift */; };
+		71269D742317A27E006C7DEC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D5C2317A27E006C7DEC /* MainView.swift */; };
+		71269D772317A27E006C7DEC /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D602317A27E006C7DEC /* IntExtension.swift */; };
+		71269D782317A27E006C7DEC /* UIFont+MonospacedNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D612317A27E006C7DEC /* UIFont+MonospacedNumbers.swift */; };
+		71269D792317A27E006C7DEC /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D622317A27E006C7DEC /* StringExtensions.swift */; };
+		71269D7A2317A27E006C7DEC /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D632317A27E006C7DEC /* UIViewExtension.swift */; };
+		71269D7D2317A27E006C7DEC /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D662317A27E006C7DEC /* UIImage.swift */; };
+		71269D7E2317A27E006C7DEC /* UIViewController+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D672317A27E006C7DEC /* UIViewController+Format.swift */; };
+		71269D7F2317A27E006C7DEC /* FirebaseFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D692317A27E006C7DEC /* FirebaseFields.swift */; };
+		71269D802317A27E006C7DEC /* FirebaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71269D6A2317A27E006C7DEC /* FirebaseHandler.swift */; };
+		71269D832317A2A6006C7DEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71269D822317A2A6006C7DEC /* Main.storyboard */; };
+		71269D852317A41A006C7DEC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 71269D842317A41A006C7DEC /* GoogleService-Info.plist */; };
+		9A740B76158AC3385BCC5703 /* Pods_GeoStream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 963207287EC774DEA6170208 /* Pods_GeoStream.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71269D1523176067006C7DEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71269CF823176066006C7DEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71269CFF23176066006C7DEC;
+			remoteInfo = GeoStream;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C82941D485F5E66268EF646 /* Pods-GeoStream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoStream.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeoStream/Pods-GeoStream.debug.xcconfig"; sourceTree = "<group>"; };
+		71269D0023176066006C7DEC /* GeoStream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoStream.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71269D0323176066006C7DEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		71269D0A23176067006C7DEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71269D0D23176067006C7DEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71269D0F23176067006C7DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71269D1423176067006C7DEC /* GeoStreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoStreamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71269D1823176067006C7DEC /* GeoStreamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoStreamTests.swift; sourceTree = "<group>"; };
+		71269D1A23176067006C7DEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71269D242317A259006C7DEC /* MapAnnotationStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotationStruct.swift; sourceTree = "<group>"; };
+		71269D262317A259006C7DEC /* CustomAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
+		71269D332317A25A006C7DEC /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		71269D352317A25A006C7DEC /* LeftPanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftPanelViewController.swift; sourceTree = "<group>"; };
+		71269D462317A266006C7DEC /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		71269D472317A267006C7DEC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		71269D482317A267006C7DEC /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		71269D492317A267006C7DEC /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		71269D542317A27E006C7DEC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		71269D552317A27E006C7DEC /* LogInView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		71269D572317A27E006C7DEC /* ImageFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFormat.swift; sourceTree = "<group>"; };
+		71269D582317A27E006C7DEC /* ImageButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageButton.swift; sourceTree = "<group>"; };
+		71269D5A2317A27E006C7DEC /* LeftPanelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftPanelView.swift; sourceTree = "<group>"; };
+		71269D5B2317A27E006C7DEC /* MapAnnotationFormating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapAnnotationFormating.swift; sourceTree = "<group>"; };
+		71269D5C2317A27E006C7DEC /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		71269D602317A27E006C7DEC /* IntExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		71269D612317A27E006C7DEC /* UIFont+MonospacedNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+MonospacedNumbers.swift"; sourceTree = "<group>"; };
+		71269D622317A27E006C7DEC /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		71269D632317A27E006C7DEC /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		71269D662317A27E006C7DEC /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		71269D672317A27E006C7DEC /* UIViewController+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Format.swift"; sourceTree = "<group>"; };
+		71269D692317A27E006C7DEC /* FirebaseFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseFields.swift; sourceTree = "<group>"; };
+		71269D6A2317A27E006C7DEC /* FirebaseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseHandler.swift; sourceTree = "<group>"; };
+		71269D822317A2A6006C7DEC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		71269D842317A41A006C7DEC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		963207287EC774DEA6170208 /* Pods_GeoStream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoStream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B095E94FA6068D4C59E38916 /* Pods-GeoStream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoStream.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeoStream/Pods-GeoStream.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71269CFD23176066006C7DEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A740B76158AC3385BCC5703 /* Pods_GeoStream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71269D1123176067006C7DEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0945E6E4C653C79506C5770B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				963207287EC774DEA6170208 /* Pods_GeoStream.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F408C2FE47ED649BF34253B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C82941D485F5E66268EF646 /* Pods-GeoStream.debug.xcconfig */,
+				B095E94FA6068D4C59E38916 /* Pods-GeoStream.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		71269CF723176066006C7DEC = {
+			isa = PBXGroup;
+			children = (
+				71269D0223176066006C7DEC /* GeoStream */,
+				71269D1723176067006C7DEC /* GeoStreamTests */,
+				71269D0123176066006C7DEC /* Products */,
+				1F408C2FE47ED649BF34253B /* Pods */,
+				0945E6E4C653C79506C5770B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		71269D0123176066006C7DEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71269D0023176066006C7DEC /* GeoStream.app */,
+				71269D1423176067006C7DEC /* GeoStreamTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71269D0223176066006C7DEC /* GeoStream */ = {
+			isa = PBXGroup;
+			children = (
+				71269D0323176066006C7DEC /* AppDelegate.swift */,
+				71269D482317A267006C7DEC /* LaunchScreenViewController.swift */,
+				71269D472317A267006C7DEC /* LoginViewController.swift */,
+				71269D492317A267006C7DEC /* MainViewController.swift */,
+				71269D462317A266006C7DEC /* VideoViewController.swift */,
+				71269D682317A27E006C7DEC /* ForFirebase */,
+				71269D282317A25A006C7DEC /* ForSidePanels */,
+				71269D232317A259006C7DEC /* ForMap */,
+				71269D532317A27E006C7DEC /* FormatHelp */,
+				71269D5E2317A27E006C7DEC /* Extensions */,
+				71269D0A23176067006C7DEC /* Assets.xcassets */,
+				71269D822317A2A6006C7DEC /* Main.storyboard */,
+				71269D0C23176067006C7DEC /* LaunchScreen.storyboard */,
+				71269D0F23176067006C7DEC /* Info.plist */,
+				71269D842317A41A006C7DEC /* GoogleService-Info.plist */,
+			);
+			path = GeoStream;
+			sourceTree = "<group>";
+		};
+		71269D1723176067006C7DEC /* GeoStreamTests */ = {
+			isa = PBXGroup;
+			children = (
+				71269D1823176067006C7DEC /* GeoStreamTests.swift */,
+				71269D1A23176067006C7DEC /* Info.plist */,
+			);
+			path = GeoStreamTests;
+			sourceTree = "<group>";
+		};
+		71269D232317A259006C7DEC /* ForMap */ = {
+			isa = PBXGroup;
+			children = (
+				71269D242317A259006C7DEC /* MapAnnotationStruct.swift */,
+				71269D262317A259006C7DEC /* CustomAnnotation.swift */,
+			);
+			path = ForMap;
+			sourceTree = "<group>";
+		};
+		71269D282317A25A006C7DEC /* ForSidePanels */ = {
+			isa = PBXGroup;
+			children = (
+				71269D332317A25A006C7DEC /* ContainerViewController.swift */,
+				71269D352317A25A006C7DEC /* LeftPanelViewController.swift */,
+			);
+			path = ForSidePanels;
+			sourceTree = "<group>";
+		};
+		71269D532317A27E006C7DEC /* FormatHelp */ = {
+			isa = PBXGroup;
+			children = (
+				71269D542317A27E006C7DEC /* Constants.swift */,
+				71269D552317A27E006C7DEC /* LogInView.swift */,
+				71269D572317A27E006C7DEC /* ImageFormat.swift */,
+				71269D582317A27E006C7DEC /* ImageButton.swift */,
+				71269D5A2317A27E006C7DEC /* LeftPanelView.swift */,
+				71269D5B2317A27E006C7DEC /* MapAnnotationFormating.swift */,
+				71269D5C2317A27E006C7DEC /* MainView.swift */,
+			);
+			path = FormatHelp;
+			sourceTree = "<group>";
+		};
+		71269D5E2317A27E006C7DEC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				71269D602317A27E006C7DEC /* IntExtension.swift */,
+				71269D612317A27E006C7DEC /* UIFont+MonospacedNumbers.swift */,
+				71269D622317A27E006C7DEC /* StringExtensions.swift */,
+				71269D632317A27E006C7DEC /* UIViewExtension.swift */,
+				71269D662317A27E006C7DEC /* UIImage.swift */,
+				71269D672317A27E006C7DEC /* UIViewController+Format.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		71269D682317A27E006C7DEC /* ForFirebase */ = {
+			isa = PBXGroup;
+			children = (
+				71269D6A2317A27E006C7DEC /* FirebaseHandler.swift */,
+				71269D692317A27E006C7DEC /* FirebaseFields.swift */,
+			);
+			path = ForFirebase;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71269CFF23176066006C7DEC /* GeoStream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71269D1D23176067006C7DEC /* Build configuration list for PBXNativeTarget "GeoStream" */;
+			buildPhases = (
+				5681A6E58AE3221E43D314D6 /* [CP] Check Pods Manifest.lock */,
+				71269CFC23176066006C7DEC /* Sources */,
+				71269CFD23176066006C7DEC /* Frameworks */,
+				71269CFE23176066006C7DEC /* Resources */,
+				2FB4487AAAB68B94BCDDD46C /* [CP] Embed Pods Frameworks */,
+				C033134B10961EEF1C76A133 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoStream;
+			productName = GeoStream;
+			productReference = 71269D0023176066006C7DEC /* GeoStream.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71269D1323176067006C7DEC /* GeoStreamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71269D2023176067006C7DEC /* Build configuration list for PBXNativeTarget "GeoStreamTests" */;
+			buildPhases = (
+				71269D1023176067006C7DEC /* Sources */,
+				71269D1123176067006C7DEC /* Frameworks */,
+				71269D1223176067006C7DEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71269D1623176067006C7DEC /* PBXTargetDependency */,
+			);
+			name = GeoStreamTests;
+			productName = GeoStreamTests;
+			productReference = 71269D1423176067006C7DEC /* GeoStreamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71269CF823176066006C7DEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Zining Wang";
+				TargetAttributes = {
+					71269CFF23176066006C7DEC = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					71269D1323176067006C7DEC = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 71269CFF23176066006C7DEC;
+					};
+				};
+			};
+			buildConfigurationList = 71269CFB23176066006C7DEC /* Build configuration list for PBXProject "GeoStream" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71269CF723176066006C7DEC;
+			productRefGroup = 71269D0123176066006C7DEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71269CFF23176066006C7DEC /* GeoStream */,
+				71269D1323176067006C7DEC /* GeoStreamTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71269CFE23176066006C7DEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71269D0E23176067006C7DEC /* LaunchScreen.storyboard in Resources */,
+				71269D832317A2A6006C7DEC /* Main.storyboard in Resources */,
+				71269D0B23176067006C7DEC /* Assets.xcassets in Resources */,
+				71269D852317A41A006C7DEC /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71269D1223176067006C7DEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FB4487AAAB68B94BCDDD46C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GeoStream/Pods-GeoStream-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoStream/Pods-GeoStream-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5681A6E58AE3221E43D314D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoStream-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C033134B10961EEF1C76A133 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GeoStream/Pods-GeoStream-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseEmailAuthUI.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseEmailAuthUI.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeoStream/Pods-GeoStream-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71269CFC23176066006C7DEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71269D4C2317A267006C7DEC /* LaunchScreenViewController.swift in Sources */,
+				71269D7D2317A27E006C7DEC /* UIImage.swift in Sources */,
+				71269D4B2317A267006C7DEC /* LoginViewController.swift in Sources */,
+				71269D732317A27E006C7DEC /* MapAnnotationFormating.swift in Sources */,
+				71269D7E2317A27E006C7DEC /* UIViewController+Format.swift in Sources */,
+				71269D452317A25A006C7DEC /* LeftPanelViewController.swift in Sources */,
+				71269D432317A25A006C7DEC /* ContainerViewController.swift in Sources */,
+				71269D6D2317A27E006C7DEC /* LogInView.swift in Sources */,
+				71269D6F2317A27E006C7DEC /* ImageFormat.swift in Sources */,
+				71269D802317A27E006C7DEC /* FirebaseHandler.swift in Sources */,
+				71269D792317A27E006C7DEC /* StringExtensions.swift in Sources */,
+				71269D6C2317A27E006C7DEC /* Constants.swift in Sources */,
+				71269D362317A25A006C7DEC /* MapAnnotationStruct.swift in Sources */,
+				71269D702317A27E006C7DEC /* ImageButton.swift in Sources */,
+				71269D382317A25A006C7DEC /* CustomAnnotation.swift in Sources */,
+				71269D782317A27E006C7DEC /* UIFont+MonospacedNumbers.swift in Sources */,
+				71269D7F2317A27E006C7DEC /* FirebaseFields.swift in Sources */,
+				71269D722317A27E006C7DEC /* LeftPanelView.swift in Sources */,
+				71269D4A2317A267006C7DEC /* VideoViewController.swift in Sources */,
+				71269D772317A27E006C7DEC /* IntExtension.swift in Sources */,
+				71269D742317A27E006C7DEC /* MainView.swift in Sources */,
+				71269D0423176066006C7DEC /* AppDelegate.swift in Sources */,
+				71269D4D2317A267006C7DEC /* MainViewController.swift in Sources */,
+				71269D7A2317A27E006C7DEC /* UIViewExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71269D1023176067006C7DEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71269D1923176067006C7DEC /* GeoStreamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71269D1623176067006C7DEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71269CFF23176066006C7DEC /* GeoStream */;
+			targetProxy = 71269D1523176067006C7DEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		71269D0C23176067006C7DEC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71269D0D23176067006C7DEC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		71269D1B23176067006C7DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		71269D1C23176067006C7DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71269D1E23176067006C7DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C82941D485F5E66268EF646 /* Pods-GeoStream.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WW99CKF474;
+				INFOPLIST_FILE = GeoStream/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.map.Team.GeoStream;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71269D1F23176067006C7DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B095E94FA6068D4C59E38916 /* Pods-GeoStream.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WW99CKF474;
+				INFOPLIST_FILE = GeoStream/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.map.Team.GeoStream;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		71269D2123176067006C7DEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WW99CKF474;
+				INFOPLIST_FILE = GeoStreamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.map.Team.GeoStreamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoStream.app/GeoStream";
+			};
+			name = Debug;
+		};
+		71269D2223176067006C7DEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WW99CKF474;
+				INFOPLIST_FILE = GeoStreamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.map.Team.GeoStreamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoStream.app/GeoStream";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71269CFB23176066006C7DEC /* Build configuration list for PBXProject "GeoStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71269D1B23176067006C7DEC /* Debug */,
+				71269D1C23176067006C7DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71269D1D23176067006C7DEC /* Build configuration list for PBXNativeTarget "GeoStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71269D1E23176067006C7DEC /* Debug */,
+				71269D1F23176067006C7DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71269D2023176067006C7DEC /* Build configuration list for PBXNativeTarget "GeoStreamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71269D2123176067006C7DEC /* Debug */,
+				71269D2223176067006C7DEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71269CF823176066006C7DEC /* Project object */;
+}
