@@ -13,7 +13,7 @@ GeoStream is a test of OpenTok's video streaming API. It's essentially the strea
 
 ## Get Started
 1. Welcome Page
-![image.png](https://github.com/ZiningW/GeoStream/raw/master/ReadMeImages/welcome.png =50x)
+<img src="https://github.com/ZiningW/GeoStream/raw/master/ReadMeImages/welcome.png" width="200">
 
 2. Signup
 * Signup by providing a username
