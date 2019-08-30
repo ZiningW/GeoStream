@@ -13,7 +13,7 @@ GeoStream is a test of OpenTok's video streaming API. It's essentially the strea
 
 ## Get Started
 1. Welcome Page
-<img src="https://github.com/ZiningW/GeoStream/raw/master/ReadMeImages/welcome.png" width="200">
+<img src="https://github.com/ZiningW/GeoStream/raw/master/ReadMeImages/welcome.png" width="300">
 
 2. Signup
 * Signup by providing a username
@@ -22,21 +22,20 @@ GeoStream is a test of OpenTok's video streaming API. It's essentially the strea
 	* Username: test@test.com
 	* Password: 123456
 * Authentification is facilitated using Firebase
-
-![image.png](https://github.com/ZiningW/GeoStream/raw/master/ReadMeImages/login.png =50x)
+<img src="https://github.com/ZiningW/GeoStream/raw/master/ReadMeImages/login.png" width="300">
 
 2. Map View
 * The interface is a simple map showing your location with a button to initialize a stream
-![image.png](https://github.com/ZiningW/GeoStream/raw/master/ReadMeImages/mainscreen.png =50x)
+<img src="https://github.com/ZiningW/GeoStream/raw/master/ReadMeImages/mainscreen.png" width="300">
 
 * When a stream is initialized, you will show up to other users like so
-![image.png](https://github.com/ZiningW/GeoStream/raw/master/ReadMeImages/otherusers.png =50x)
+<img src="https://github.com/ZiningW/GeoStream/raw/master/ReadMeImages/otherusers.png" width="300">
 
 * You can join an existing stream by clicking on the video camera icon
 
 3. Stream
 * On the stream view, you can see what the other user is streaming
-![image.png](https://github.com/ZiningW/GeoStream/raw/master/ReadMeImages/stream.png =50x)
+<img src="https://github.com/ZiningW/GeoStream/raw/master/ReadMeImages/stream.png" width="300">
 
 * Leaving the stream takes you back to the Map view
 * If you're the streamer and stop streaming, you will be removed from the map
