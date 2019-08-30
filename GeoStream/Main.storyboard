@@ -282,17 +282,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAi-0k-JwO">
-                                <rect key="frame" x="30" y="74" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="pXV-3S-hHN"/>
-                                    <constraint firstAttribute="height" constant="40" id="wJX-OD-6eY"/>
-                                </constraints>
-                                <state key="normal" title="Return" image="return"/>
-                                <connections>
-                                    <action selector="returnToMainView:" destination="NLB-Hs-BwH" eventType="touchUpInside" id="MKE-fJ-hku"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVz-6s-EME" userLabel="hangUpButton">
                                 <rect key="frame" x="177" y="772" width="60" height="60"/>
                                 <constraints>
@@ -335,13 +324,11 @@
                         <constraints>
                             <constraint firstItem="B1G-yk-318" firstAttribute="leading" secondItem="tIU-jC-Oev" secondAttribute="leading" id="32r-SS-NY8"/>
                             <constraint firstItem="ypQ-85-Nhm" firstAttribute="bottom" secondItem="PN3-wV-V0I" secondAttribute="bottom" constant="30" id="3qC-TD-6J0"/>
-                            <constraint firstItem="BAi-0k-JwO" firstAttribute="leading" secondItem="ypQ-85-Nhm" secondAttribute="leading" constant="30" id="AGo-dn-e4D"/>
                             <constraint firstItem="B1G-yk-318" firstAttribute="top" secondItem="tIU-jC-Oev" secondAttribute="top" id="GYp-GV-OSW"/>
                             <constraint firstItem="ypQ-85-Nhm" firstAttribute="bottom" secondItem="Fcv-zB-LY3" secondAttribute="bottom" constant="30" id="STr-OC-phg"/>
                             <constraint firstAttribute="trailing" secondItem="B1G-yk-318" secondAttribute="trailing" id="YQf-v7-eOu"/>
                             <constraint firstItem="PN3-wV-V0I" firstAttribute="leading" secondItem="ypQ-85-Nhm" secondAttribute="leading" constant="60" id="dTX-QR-3XN"/>
                             <constraint firstItem="YVz-6s-EME" firstAttribute="centerX" secondItem="tIU-jC-Oev" secondAttribute="centerX" id="ddX-Sn-hyB"/>
-                            <constraint firstItem="BAi-0k-JwO" firstAttribute="top" secondItem="ypQ-85-Nhm" secondAttribute="top" constant="30" id="i6b-PY-csv"/>
                             <constraint firstAttribute="bottom" secondItem="B1G-yk-318" secondAttribute="bottom" id="iVq-sC-ckR"/>
                             <constraint firstItem="ypQ-85-Nhm" firstAttribute="bottom" secondItem="YVz-6s-EME" secondAttribute="bottom" constant="30" id="jtR-1e-S7l"/>
                             <constraint firstItem="ypQ-85-Nhm" firstAttribute="trailing" secondItem="Fcv-zB-LY3" secondAttribute="trailing" constant="60" id="s0h-k2-aS0"/>
@@ -365,7 +352,6 @@
         <image name="menu2" width="512" height="512"/>
         <image name="muteButton" width="372" height="372"/>
         <image name="muteButtonSelected" width="372" height="372"/>
-        <image name="return" width="512" height="512"/>
         <image name="switchCameraButton" width="372" height="372"/>
         <image name="switchCameraButtonSelected" width="372" height="372"/>
     </resources>

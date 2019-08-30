@@ -50,6 +50,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if selfUserUid != "None"{
             let onlineStatus = selfUserUid + "/" + "OnlineStatus"
             ref.child(onlineStatus).setValue("Offline")
+            let broadcastStatus = selfUserUid + "/" + "Broadcasting"
+            ref.child(broadcastStatus).setValue("false")
         }
     }
 

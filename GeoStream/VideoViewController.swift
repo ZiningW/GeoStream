@@ -143,19 +143,7 @@ class VideoChatViewController: UIViewController {
             publisher?.cameraPosition = AVCaptureDevice.Position.back
         }        
     }
-    
-    
-    @IBAction func returnToMainView(_ sender: Any) {
-        UIView.animate(withDuration: 0.25, animations: {
-            self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
-            self.view.alpha = 0.0;
-        }, completion:{(finished : Bool)  in
-            if (finished)
-            {
-                self.view.removeFromSuperview()
-            }
-        });
-    }
+
 }
 
 // MARK: - OTSubscriberDelegate callbacks
@@ -202,9 +190,10 @@ extension VideoChatViewController: OTSessionDelegate {
             guard let publisherView = pub.view else {
                 return
             }
+            guard let videoViewFrame = videoView else {return}
 
             // Our view should take up the entire screen. What we see depends on if we're the publisher or subscriber
-            publisherView.frame = videoView.frame
+            publisherView.frame = videoViewFrame.frame
             videoView.addSubview(publisherView)
             publisher = pub
         }
@@ -239,8 +228,9 @@ extension VideoChatViewController: OTSessionDelegate {
             guard let subscriberView = subscriber.view else {
                 return
             }
+            guard let videoViewFrame = videoView else {return}
             // Our view should take up the entire screen. What we see depends on if we're the publisher or subscriber
-            subscriberView.frame = videoView.frame
+            subscriberView.frame = videoViewFrame.frame
             videoView.insertSubview(subscriberView, at: 0)
             
         }
